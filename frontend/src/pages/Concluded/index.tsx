@@ -5,10 +5,11 @@ import { Link } from "react-router-dom";
 export default function Verification() {
   return (
     <main className="grid justify-items-center font-normal">
-        <img
-          src={images.dogConf}
-          className="w-screen md:absolute md:left-0 md:h-[468px]"
-          alt="" />
+      <img
+        src={images.dogConf}
+        className="w-screen md:absolute md:left-0 md:h-[468px]"
+        alt=""
+      />
       <div className="grid justify-items-center w-full z-10 md:rounded-[32px] md:border-2 md:border-primary-blue-1 md:mt-80 md:w-[600px] md:bg-white mb-32">
         <p className="text-3xl pt-10 pl-6">
           <span className="text-primary-blue-1">Tobias </span> está ainda mais

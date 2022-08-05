@@ -4,7 +4,7 @@ import { icons } from "../../assets";
 interface IaccordionProps {
   titleAccordion: string;
   contentAccordion: string;
-  className?:string
+  className?: string;
 }
 
 export default function Accordion(props: IaccordionProps) {
@@ -36,8 +36,12 @@ export default function Accordion(props: IaccordionProps) {
                 className={`w-4 md:w-6 h-4 md:h-6 shrink-0 ${
                   activeAccordion.state == true ? "" : ""
                 }`}
-                src={`${activeAccordion.state == false ? icons.iconCircle : icons.iconNegative}`}
-                alt="Icone de positivo e negativo"                              
+                src={`${
+                  activeAccordion.state == false
+                    ? icons.iconCircle
+                    : icons.iconNegative
+                }`}
+                alt="Icone de positivo e negativo"
               />
             </button>
           </h2>

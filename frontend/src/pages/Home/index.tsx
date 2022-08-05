@@ -7,7 +7,11 @@ export default function Home() {
   return (
     <>
       <main className="grid">
-        <img src={images.DogHome} alt="imagem de pets" className="w-screen md:h-[662px]" />
+        <img
+          src={images.DogHome}
+          alt="imagem de pets"
+          className="w-screen md:h-[662px]"
+        />
         <div className="">
           <h2 className="pt-[42px] md:pt-[96px] px-[24px] md:px-[62px] font-600 text-mobile-size-24px md:text-[32px] font-libre leading-[26.4px]">
             {`Olá, `}
@@ -42,7 +46,6 @@ export default function Home() {
         </div>
 
         <div className="pt-[56px] md:pt-[96px] px-[24px] md:px-[66px]">
-
           <h3 className="uppercase font-600 text-mobile-size-12px md:text-[14px] font-libre leading-[16.8px] md:pb-[18px] text-primary-blue-1">
             FIQUE POR DENTRO
           </h3>
@@ -51,15 +54,24 @@ export default function Home() {
             {`Dicas para `}{" "}
             <span className="text-primary-blue-1"> {mockPet.name} </span>
           </span>
-
         </div>
 
         <div className=" flex justify-center gap-5  flex-wrap my-[40px] md:mt-[62px]">
-
-          <CardPets imagePet={images.dog4} texto={"Seu amigo pet precisa de uma companhia?"} redirect={""} />
-          <CardPets imagePet={images.dog5} texto={"Dicas para seu cachorro conviver melhor com gatos"} redirect={""} />
-          <CardPets imagePet={images.dog6} texto={"Saiba quando seu pet deve tomar as vacinas V8 e V10"} redirect={""} />
-          
+          <CardPets
+            imagePet={images.dog4}
+            texto={"Seu amigo pet precisa de uma companhia?"}
+            redirect={""}
+          />
+          <CardPets
+            imagePet={images.dog5}
+            texto={"Dicas para seu cachorro conviver melhor com gatos"}
+            redirect={""}
+          />
+          <CardPets
+            imagePet={images.dog6}
+            texto={"Saiba quando seu pet deve tomar as vacinas V8 e V10"}
+            redirect={""}
+          />
         </div>
 
         <div className="justify-self-end mr-5 md:mb-[140px]">
